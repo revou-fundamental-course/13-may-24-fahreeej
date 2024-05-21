@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyCalculator Fahrij :D</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="opening">
+        <h1>MyCalculator</h1>
+        <p>Keliling segitiga adalah jumlah total panjang semua sisinya dan<br>Luas segitiga adalah ukuran dari daerah yang ditempati oleh segitiga di bidang dua dimensi</p>
+    </div>
+
+    <div class="form">
+            <h2>Luas Segitiga</h2>
+            <img src="assets/rumus.png">   
+                <div class="keterangan">
+                    <p>Rumus Luas Segitiga Yaitu :</p>
+                    <p class="rumus-segitiga">1/2 x A x T</p>
+                    <p>Keterangan :<br>A = Alas<br>T = Tinggi</p>
+                </div> 
+            <hr>    
+        <h3>Hitung Luas Segitiga</h3>
+            <section class="input">
+                <div>
+                    <label>A :</label>
+                    <input type="number" id="alas" name="alas">
+                </div>
+                <div>
+                    <label>T :</label>
+                    <input type="number" id="tinggi" name="tinggi">
+                </div>
+                <div>
+                    <label>Hasil:</label>
+                    <input type="number" id="luas" name="luas" disabled="true">
+                </div>      
+                   <button value="hitung" onclick="luassegitiga()">Hitung</button>
+                   <button value="reset" onclick="luasreset()">Reset</button>
+            <section>
+    </div>
+
+    <div class="form">
+            <h2>Keliling Segitiga</h2>
+            <img src="assets/rumus.png">   
+                <div class="keterangan">
+                    <p>Rumus Keliling Segitiga Yaitu :</p>
+                    <p class="rumus-segitiga">A + B + C</p>
+                    <p>Keterangan :<br>A = Sisi 1<br>B = Sisi 2<br>C = Sisi 3</p>
+                </div> 
+            <hr>    
+        <h3>Hitung Keliling Segitiga</h3>
+        <section class="input-keliling">
+            <div>
+                <label>A :</label>
+                <input type="number" id="a" name="a">
+            </div>
+            <div>
+                <label>B :</label>
+                <input type="number" id="b" name="b">
+            </div>
+            <div>
+                <label>C :</label>
+                <input type="number" id="c" name="c">
+            </div>
+            <div>
+                <label>Hasil:</label>
+                <input type="number" id="keliling" name="keliling" disabled="true">
+            </div>
+               <button value="hitung" onclick="kelilingsegitiga()">Hitung</button>
+               <button value="reset" onclick="kelilingreset()">Reset</button>
+        <section>        
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
